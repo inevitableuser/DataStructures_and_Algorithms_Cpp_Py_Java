@@ -20,6 +20,7 @@ void SelectionSort(int arr[],int n)
        {
           if(curmin>arr[j])
           {
+            curmin=arr[j];
             minindex=j;
           }
               
