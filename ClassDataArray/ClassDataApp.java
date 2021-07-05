@@ -65,7 +65,9 @@ int arrsize=0;
             {
                 personArr[j]=personArr[j+1];      
             } 
+            arrsize-=1;
         }
+
        }
     return flag;
    }
@@ -85,6 +87,10 @@ class ClassDataApp
         arr.displayAll();
         boolean deleteack=arr.delete("milka");
         System.out.println("delete is "+deleteack+" deleted milka");
+        System.out.println();
+        arr.displayAll();
+        deleteack=arr.delete("Aryan");
+        System.out.println("delete is "+deleteack+" deleted Aryan");
         System.out.println();
         arr.displayAll();
     }
