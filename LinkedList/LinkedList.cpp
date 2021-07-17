@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <cstddef>
 using namespace std;
 
 class Node
@@ -13,7 +14,6 @@ class LinkedList
 {
   public:
     Node *head=NULL;
-    bool first=true;
     Node *p,*q;
      int count=0;
     void insert()
@@ -21,13 +21,12 @@ class LinkedList
       int ele;
       cout<<"Enter the element to insert:";
       cin>>ele;
-      if(first==true)
+      if(head==NULL)
       { 
           p=new Node();
           p->data=ele;
           p->next=NULL;
           head=p;
-          first=false;
       }
       else 
       {
