@@ -1,3 +1,4 @@
+# here we are using linkedlist, efficient usage is there
 
 class Queue:
     Q=[]
