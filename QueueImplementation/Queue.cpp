@@ -2,6 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// only size-1 is used efficiently, means 1 array block is left empty
 
 class Queue
 {
