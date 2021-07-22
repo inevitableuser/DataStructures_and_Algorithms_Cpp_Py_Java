@@ -1,12 +1,13 @@
 
-# include <stdc++.h>
+# include <bits/stdc++.h>
+using namespace std;
 
 class Node
 {
     public:
-    Node lchild;
+    Node* lchild;
     int data;
-    Node rchild;
+    Node* rchild;
 
     Node(int data)
     {
@@ -20,26 +21,47 @@ class Node
 class BinaryTree
 {
     public:
-        Node head=NULL;
-        Node p=NULL;
+        Node* head=NULL;
+        Node* p,*q=NULL;
 
-        Node* pre_getAddr(Node* p,int leaf)
+        void pre_getAddr(Node* p,int leaf)
         {
-           if(p.data==leaf)
+            if(p==NULL)
+            {
+                return;
+            }
+           if(p->data==leaf)
            {
-               return p;
+               q=p;
            }
-           preorder(p->lchild);
-           preorder(p->rchild);
+           pre_getAddr(p->lchild,leaf);
+           pre_getAddr(p->rchild,leaf);
         }
 
+
+         void inorder(Node *p)
+        {
+            if(p==NULL)
+            {
+                return;
+            }
+            inorder(p->lchild);
+            cout<<p->data<<endl;
+            inorder(p->rchild);
+        }
 
         void preorder(Node *p)
         {
-            cout<<p.data<<" ";
+            if(p==NULL)
+            {
+                return;
+            }
+            cout<<p->data<<endl;
             preorder(p->lchild);
-            preorder(p->rchild)
+            preorder(p->rchild);
         }
+        
+        
         void append(int ele)
         {
             int leaf;
@@ -55,18 +77,18 @@ class BinaryTree
                 cout<<"Left(l) or right(r) ";
                 cin>>dir;
                 p=head;
-                p=pre_getAddr(p,leaf);
+                pre_getAddr(p,leaf);
                 if(dir=='l')
                 {
-                   p->lchild=new Node(ele);
+                   q->lchild=new Node(ele);
                 }
-                else
+                else if(dir=='r')
                 {
-                   p->rchild=new Node(ele);
+                   q->rchild=new Node(ele);
                 }
             }
         }
-}
+};
 
 int main()
 {
@@ -88,6 +110,9 @@ int main()
             bt.preorder(bt.head);
         }
 
-
+        else if(choice==3)
+        {
+            bt.inorder(bt.head);
+        }
     }
 }
