@@ -22,7 +22,18 @@ class BinaryTree
 {
     public:
         Node* head=NULL;
-        Node* p,*q=NULL;
+        Node *p,*q;
+        
+        void replace(int ele)
+        {
+            int node;
+            Node *left, *right;
+            cout<<"To which node you want to replace: ";
+            cin>>node;
+            p=head;
+            pre_getAddr(p,node);
+            q->data=ele;            
+        }
 
         void pre_getAddr(Node* p,int leaf)
         {
@@ -38,7 +49,7 @@ class BinaryTree
            pre_getAddr(p->rchild,leaf);
         }
 
-
+        
          void inorder(Node *p)
         {
             if(p==NULL)
@@ -59,6 +70,17 @@ class BinaryTree
             cout<<p->data<<endl;
             preorder(p->lchild);
             preorder(p->rchild);
+        }
+
+        void postorder(Node *p)
+        {
+            if(p==NULL)
+            {
+                return;
+            }
+            postorder(p->lchild);
+            postorder(p->rchild);
+            cout<<p->data<<endl;
         }
         
         
@@ -96,8 +118,8 @@ int main()
     BinaryTree bt=BinaryTree();
     while(true)
     {
-        cout<<"1.append   2.preorder"<<endl;
-        cout<<"Enter your choice";
+        cout<<"1.Append   2.PreOrder   3.InOrder   4.PostOrder   5.Replace   6.Exit"<<endl;
+        cout<<"Enter your choice :";
         cin>>choice;
         if(choice==1)
         {
@@ -113,6 +135,21 @@ int main()
         else if(choice==3)
         {
             bt.inorder(bt.head);
+        }
+        else if(choice==4)
+        {
+            bt.postorder(bt.head);
+        }
+        else if(choice==5)
+        {
+            cout<<"Enter your element to put: ";
+            cin>>ele;
+            bt.replace(ele);
+        }
+        else
+        {
+            cout<<"Exiting Program";
+            break;
         }
     }
 }
