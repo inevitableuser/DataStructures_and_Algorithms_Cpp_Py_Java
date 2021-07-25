@@ -13,8 +13,19 @@ int main()
   vector<int> copyofa(a);    //copies all elements from a to copyofa
 
 
+  vector<int> x={1,2,3,4,5};
+
+  x.insert(x.end(),a.begin(),a.end());     //appends a vector to x's tail  similar to addall in java
+
+
   cout<<"Elements in vector a: ";
   for(int i:a)
+  cout<<i<<" ";
+  cout<<endl;
+
+
+  cout<<"Elements in vector x: ";
+  for(int i:x)
   cout<<i<<" ";
   cout<<endl;
 
@@ -61,7 +72,7 @@ int main()
   {
       cout<<i<<" ";
   }
-  cout<<endl;v
+  cout<<endl;
 
   cout<<"Front of vector is "<<v.front()<<endl;
 
