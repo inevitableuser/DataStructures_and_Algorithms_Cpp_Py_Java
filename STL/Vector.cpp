@@ -43,6 +43,13 @@ int main()
   for(int i:x)
   cout<<i<<" ";
   cout<<endl;
+ 
+  x.at(1)=7;                     //x[1]=7 can also use
+
+  cout<<"Elements in vector x after changing value at index 1: ";
+  for(int i:x)
+  cout<<i<<" ";
+  cout<<endl;
 
 
   cout<<"Elements in vector copyofa: ";
@@ -118,3 +125,4 @@ int main()
   return 0;
 
 }
+
