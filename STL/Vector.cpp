@@ -30,6 +30,21 @@ int main()
   cout<<endl;
 
 
+  x.erase(x.begin()+1);               //removes  element based on index
+
+  cout<<"Elements in vector x after erase of one ele: ";
+  for(int i:x)
+  cout<<i<<" ";
+  cout<<endl;
+
+  x.erase(x.begin(),x.begin()+4);
+
+  cout<<"Elements in vector x after erase of group of ele: ";
+  for(int i:x)
+  cout<<i<<" ";
+  cout<<endl;
+
+
   cout<<"Elements in vector copyofa: ";
   for(int i: copyofa)
   cout<<i<<" ";
