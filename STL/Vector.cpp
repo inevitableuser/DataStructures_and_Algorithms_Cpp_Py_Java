@@ -1,1 +1,84 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  vector<int> v;     //vector is dynamic array
+
+  vector<int> a(5,1);         //5 is initial size and 1 is initial default value in each block
+ 
+  vector<int> b(5);           //5 is initial size and 0 is default values
+
+ 
+  vector<int> copyofa(a);    //copies all elements from a to copyofa
+
+
+  cout<<"Elements in vector a: ";
+  for(int i:a)
+  cout<<i<<" ";
+  cout<<endl;
+
+
+  cout<<"Elements in vector copyofa: ";
+  for(int i: copyofa)
+  cout<<i<<" ";
+  cout<<endl;
+
+
+  cout<<"Elements in vector b: ";
+  for(int i:b)
+  cout<<i<<" ";
+  cout<<endl;
+
+  cout<<"capacity of vector is: "<<v.capacity()<<" and ";
+  cout<<"Size of vector is: "<<v.size()<<endl;
+
+  v.push_back(1);    //its like append in python
+
+  cout<<"capacity of vector is: "<<v.capacity()<<" and ";
+  cout<<"Size of vector is: "<<v.size()<<endl;
+
+  v.push_back(2);
+
+  cout<<"capacity of vector is: "<<v.capacity()<<" and ";
+  cout<<"Size of vector is: "<<v.size()<<endl;
+
+  v.push_back(3);
+
+  cout<<"capacity of vector is: "<<v.capacity()<<" and ";
+  cout<<"Size of vector is: "<<v.size()<<endl;
+
+  cout<<"element at position 2 is: "<<v[1]<<endl;
+
+  cout<<"element at position 3 is: "<<v.at(2)<<endl;
+
+  cout<<"Front of vector is "<<v.front()<<endl;
+
+  cout<<"Back of vector is "<<v.back()<<endl;
+
+  cout<<"Printing vector before popback: ";
+  for(int i: v)
+  {
+      cout<<i<<" ";
+  }
+  cout<<endl;
+  
+  v.pop_back();                            //its like pop() in python
+
+  cout<<"Printing vector after popback: ";
+  for(int i: v)
+  {
+      cout<<i<<" ";
+  }
+  cout<<endl;
+
+ cout<<"Size of vector is "<<v.size()<<" and Capacity of vector is "<<v.capacity()<<endl;
+
+  v.clear();                    //clears all the elements but capicity same
+
+  cout<<"size of vector after clear is "<<v.size()<<" and capacity of vector is "<<v.capacity()<<endl;
+
+  return 0;
+
+}
 
