@@ -37,7 +37,7 @@ int main()
   cout<<i<<" ";
   cout<<endl;
 
-  x.erase(x.begin(),x.begin()+4);
+  x.erase(x.begin(),x.begin()+4);         //removes group of ele between the indexes provided
 
   cout<<"Elements in vector x after erase of group of ele: ";
   for(int i:x)
@@ -118,4 +118,3 @@ int main()
   return 0;
 
 }
-
