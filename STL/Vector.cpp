@@ -45,12 +45,23 @@ int main()
 
   v.push_back(3);
 
+
   cout<<"capacity of vector is: "<<v.capacity()<<" and ";
   cout<<"Size of vector is: "<<v.size()<<endl;
 
   cout<<"element at position 2 is: "<<v[1]<<endl;
 
   cout<<"element at position 3 is: "<<v.at(2)<<endl;
+
+  
+  v.insert(v.begin()+1,9);    //inserts 9 at index 1
+
+  cout<<"after inserting 9 at index 1 the elements in array are: ";
+  for(int i: v)
+  {
+      cout<<i<<" ";
+  }
+  cout<<endl;v
 
   cout<<"Front of vector is "<<v.front()<<endl;
 
