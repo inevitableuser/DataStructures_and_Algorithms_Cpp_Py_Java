@@ -64,6 +64,13 @@ int main()
    cout<<i<<" ";
    cout<<endl;
 
+
+   deque<int> e(d);                       //copying d to e
+   cout<<"Elements in deq e are: ";
+   for(int i:e)
+   cout<<i<<" ";
+   cout<<endl;
+
   return 0;
 
 }
@@ -84,4 +91,5 @@ is deq empty? 0
 deq size before erase is 2
 deq size after erase is 1
 Elements in deq are: 2 
+Elements in deq e are: 2 
 */
