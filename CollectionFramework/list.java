@@ -1,6 +1,6 @@
 import java.util.*;
 
-class linkedlist
+class list
 {
     public static void main(String[] args) {
         
