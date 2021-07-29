@@ -8,7 +8,7 @@ int main()
      /*
      deque is a doubly ended queue which is collection of static arrays and 
      can grow dynamic in run time
-     which can be acted as linkedlist and index access is possible in this.
+     which can be acted as linked arrays and index access is possible in this.
      random access of deq is little slower than vector.
 
 
