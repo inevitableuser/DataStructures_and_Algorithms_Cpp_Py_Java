@@ -6,13 +6,14 @@ class arraylist
         ArrayList<String> boysArray=new ArrayList<>();    
 
         /* 
-        List is generic type array can be non generic
-
+        List is interface where arraylist is class implementing list interface methods
+        
+        arraylist can be non generic
         ArrayList test=new ArrayList();
-        List <String> boysArray=new ArrayList<>();
+        
+        List is generic type
+        List<String> boysArray=new ArrayList<>();
 
-
-        List is an interface and ArrayList is a class
 
         List is fast and index accessible 
         ArrayList acts as a dynamic array and is slow
