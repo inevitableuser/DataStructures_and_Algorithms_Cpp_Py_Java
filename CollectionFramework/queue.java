@@ -10,6 +10,11 @@ class queue
              here queue is implemented using queue interface
             and linked list class 
 
+            Queue<Integer> queue=new LinkedList<>();       contains nearly 33 methods useful for queue only 
+
+            LinkedList<Integer> queue=new LinkedList<>();   contains nearly 66 methods inlcuding above 33 
+            
+
         */
 
         queue.offer(1);                      //good way to append ele at rear
