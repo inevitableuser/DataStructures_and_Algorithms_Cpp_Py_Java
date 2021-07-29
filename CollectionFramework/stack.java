@@ -29,6 +29,12 @@ public class stack
         System.out.println("Stack: "+animals);
 
         System.out.println("stack is empty? "+animals.empty());               //returns boolean true if empty
+        
+        
+        System.out.print("Animals in stack are: ");                           //traversing is possible here not like c++
+        for(String s:animals)
+        System.out.print(s+" ");
+        System.out.println();
     }
 }
 
@@ -44,4 +50,5 @@ size of stack after pop is 3
 The top animal of stack is horse
 Stack: [Lion, Dog, horse]
 stack is empty? false
+Animals in stack are: Lion Dog horse 
 */
