@@ -41,8 +41,13 @@ pop_ele=mylist.pop(1)                                        #removing or poppin
 print("popped element is:",pop_ele)
 print("printing mylist after pop:",mylist) 
                                                             
-mylist.remove("cherry")                                     #popping ele based on value, java has overloaded method remove() which takes index or value
+mylist.remove("cherry")                                     #popping ele based on value (removes first occurence), java has overloaded method remove() which takes index or value
 print("printing mylist:",mylist)
+
+
+del mylist[1]                                               # deletes the item at specified index
+print("printing list after deleting apple:",mylist)
+
 
 mylist.clear()                                              #clears the entire list
 print("printing mylist after clear:",mylist)
@@ -107,8 +112,7 @@ oddlist=[i for i in mylist if i%2!=0]                                         #c
 print("oddlist",oddlist)
 
 evenlist=[i if i%2==0 else 0  for i in mylist]                               #creating even list with only even ele and others will be filled with 0's
-print("evenlist with zeros",evenlist)
-
+print("evenlist with zeros",evenlist)  
 
 
 """
@@ -127,6 +131,7 @@ printing mylist after pop: ['banana', 'strawberry', 'cherry', 'apple']
 popped element is: strawberry
 printing mylist after pop: ['banana', 'cherry', 'apple']
 printing mylist: ['banana', 'apple']
+printing list after deleting apple: ['banana']
 printing mylist after clear: []
 printing mylist after reverse: ['apple', 'cherry', 'banana']
 printing mylist_backup after reverse: ['apple', 'cherry', 'banana']
@@ -150,6 +155,5 @@ stepping and slicing [4, 6, 8, 10]
 Printing squares of list [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 oddlist [1, 3, 5, 7, 9]
 evenlist with zeros [0, 2, 0, 4, 0, 6, 0, 8, 0, 10]
-
 
 """
