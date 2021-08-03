@@ -96,6 +96,11 @@ mydict={mytuple:24}                                            # tuples can be a
 print("printing mydict:",mydict)
 
 
+# all items can be used as values 
+mytuple=(1,6)
+mydict={mytuple:list(range(1,6+1))}
+print("printing mydict:",mydict)
+
 
 """
 OUTPUT:
@@ -126,5 +131,6 @@ printing mydict2: {'name': 'bagath', 'age': 20, 'email': 'bagathsingh@gmail.com'
 mydict after updating: {'name': 'bagath', 'age': 20, 'city': 'Mumbai', 'email': 'bagathsingh@gmail.com'}
 printing mydict: {2: 4, 3: 9, 4: 16}
 printing mydict: {(4, 6): 24}
+printing mydict: {(1, 6): [1, 2, 3, 4, 5, 6]}
 
 """
