@@ -16,7 +16,14 @@ int main()
   vector<int> x={1,2,3,4,5};
 
   x.insert(x.end(),a.begin(),a.end());     //appends a vector to x's tail  similar to addall in java
-
+  
+  
+  
+  vector<int>::iterator it=vector.begin()+3;
+ 
+  
+  int index=it-x.begin()               // itetator - vector.begin() gives the index value of that iterator
+  
 
   cout<<"Elements in vector a: ";
   for(int i:a)
