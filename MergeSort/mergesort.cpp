@@ -22,7 +22,7 @@ void merge(vector<int> &vect,int start,int mid,int end)
     cout<<i<<" ";
     cout<<endl;
 
-   for(int i=0;i<vect.size();i++)
+   for(int i=start;i<=end;i++)
    {
 
     for(int i:vect)
@@ -41,29 +41,30 @@ void merge(vector<int> &vect,int start,int mid,int end)
            y++;
        }
 
-       if(x>mid || y>end)
+       if(x==left.size())
        {
-           if(x>mid && y<end)
+           while(y<right.size())
            {
-                while(y<=end)
-                {
-                    vect[i]=right[y];
-                    y++;
-                }
-                break;
+               vect[i]=right[y];
+               y++;
            }
-           else 
+           break;
+       }
+       else if(y==right.size())
+       {
+           while(x<left.size())
            {
-                while(x<=mid)
-                {
-                    vect[i]=left[x];
-                    x++;
-                }
-                break;
+            vect[i]=left[x];
+            x++;
            }
+           break;
        }
         
    }
+
+   for(int i:vect)
+    cout<<i<<" ";
+    cout<<endl;
 
 
 
@@ -116,5 +117,4 @@ int main()
 
     return 0;
 }
-
 
