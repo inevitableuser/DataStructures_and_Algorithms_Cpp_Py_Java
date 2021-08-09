@@ -58,3 +58,27 @@ int main() {
   return 0;
 }
 
+
+/*
+OUTPUT:
+
+Enter a ele to append: 5
+continue? y or n: y
+Enter a ele to append: 67
+continue? y or n: y
+Enter a ele to append: 23
+continue? y or n: y
+Enter a ele to append: 1
+continue? y or n: y
+Enter a ele to append: 45
+continue? y or n: y
+Enter a ele to append: 89
+continue? y or n: y
+Enter a ele to append: 4
+continue? y or n: y
+Enter a ele to append: 77
+continue? y or n: n
+vector before sorting: 5 67 23 1 45 89 4 77 
+vector after sorting: 1 4 5 23 45 67 77 89 
+
+*/
