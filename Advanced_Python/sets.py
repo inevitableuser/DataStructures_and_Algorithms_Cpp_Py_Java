@@ -126,3 +126,42 @@ print('is setA and setC are disjoint sets:',setA.isdisjoint(setC))      # is the
 fset=frozenset([1,2,3,4])           # frozen set is a immutable set where we cannot update once init
 print('this is frozen set:',fset)   # all set methods will work except add,remove,discard,update and all inplace methods won't work
 
+
+
+"""
+OUTPUT:
+
+{1, 2, 3, 5}
+{'o', 'e', 'l', 'h'}
+{1, 2, 3, 6, 7}
+set()
+<class 'dict'>
+<class 'set'>
+printing myset {1, 2, 3}
+printing myset {1, 3}
+printing myset {1, 3}
+popping 1 from myset
+printing myset: {3}
+iterating myset:  3 4 5 6 
+4 exist
+printing myset {3, 4, 5, 6}
+printing mysetcopy {3, 4, 5, 6}
+union of odd and even:  {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+intersection of odd and even:  set()
+intersection of even and prime:  {2}
+the difference of sets A and B is (A-B): {4, 5, 6, 7, 8, 9}
+the difference of sets B and A is (B-A): {10, 11, 12}
+the symetric_differece of A and B is: {4, 5, 6, 7, 8, 9, 10, 11, 12}
+the setA after inplace union: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+the setA after inplace intersection: {1, 2, 3}
+the setA after inplace difference: {4, 5, 6, 7, 8, 9}
+the setA after inplace sym_diff: {4, 5, 6, 7, 8, 9, 10, 11, 12}
+setA is subset of setB: False
+setB is subset of setA: True
+setA is superset of setB: True
+setB is superset of setA: False
+is setA and setB are disjoint sets: False
+is setA and setC are disjoint sets: True
+this is frozen set: frozenset({1, 2, 3, 4})
+
+"""
