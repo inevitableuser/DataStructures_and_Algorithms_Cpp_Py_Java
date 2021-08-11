@@ -66,3 +66,13 @@ class quicksort {
     }
 }
 
+
+
+
+/*
+OUTPUT:
+
+Enter the Array to sort: 5 67 23 1 45 89 4 77 
+Array after quicksorting: [1, 4, 5, 23, 45, 67, 77, 89]
+
+*/
