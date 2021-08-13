@@ -108,3 +108,102 @@ int main() {
   }
   return 0;
 }
+
+/*
+
+OUTPUT:
+
+1.offer   2.poll   3.peek   4.print
+enter your choice: 1
+enter the ele: 1
+1.offer   2.poll   3.peek   4.print
+enter your choice: 1
+enter the ele: 2
+1.offer   2.poll   3.peek   4.print
+enter your choice: 1
+enter the ele: 3
+1.offer   2.poll   3.peek   4.print
+enter your choice: 1
+enter the ele: 4
+1.offer   2.poll   3.peek   4.print
+enter your choice: 1
+enter the ele: 5
+1.offer   2.poll   3.peek   4.print
+enter your choice: 3
+The root of the heap is 5
+1.offer   2.poll   3.peek   4.print
+enter your choice: 4
+printing maxheap: 5 4 2 1 3
+1.offer   2.poll   3.peek   4.print
+enter your choice: 1
+enter the ele: 6
+1.offer   2.poll   3.peek   4.print
+enter your choice: 4
+printing maxheap: 6 4 5 1 3 2
+1.offer   2.poll   3.peek   4.print
+enter your choice: 1
+enter the ele: 7
+1.offer   2.poll   3.peek   4.print
+enter your choice: 4
+printing maxheap: 7 4 6 1 3 2 5
+1.offer   2.poll   3.peek   4.print
+enter your choice: 1
+enter the ele: 8
+1.offer   2.poll   3.peek   4.print
+enter your choice: 3
+The root of the heap is 8
+1.offer   2.poll   3.peek   4.print
+enter your choice: 4
+printing maxheap: 8 7 6 4 3 2 5 1
+1.offer   2.poll   3.peek   4.print
+enter your choice: 1
+enter the ele: 9
+1.offer   2.poll   3.peek   4.print
+enter your choice: 4
+printing maxheap: 9 8 6 7 3 2 5 1 4
+1.offer   2.poll   3.peek   4.print
+enter your choice: 1
+enter the ele: 10
+1.offer   2.poll   3.peek   4.print
+enter your choice: 3
+The root of the heap is 10
+1.offer   2.poll   3.peek   4.print
+enter your choice: 4
+printing maxheap: 10 9 6 7 8 2 5 1 4 3
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+The popped element is: 10
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+The popped element is: 9
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+The popped element is: 8
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+The popped element is: 7
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+The popped element is: 6
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+The popped element is: 5
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+The popped element is: 4
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+The popped element is: 3
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+The popped element is: 2
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+The popped element is: 1
+1.offer   2.poll   3.peek   4.print
+enter your choice: 2
+Underflow heap is empty
+1.offer   2.poll   3.peek   4.print
+...
+
+*/
