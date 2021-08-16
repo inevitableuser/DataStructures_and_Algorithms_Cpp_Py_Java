@@ -1,7 +1,3 @@
-
-
-
-
 class QuickSort:
     Arr=[]
     def __init__(self,Arr):
