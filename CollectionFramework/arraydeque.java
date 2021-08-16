@@ -7,9 +7,9 @@ class arraydeque {
 
         deq.offer(23);
 
-        deq.offerFirst(12);                   // offerFirst is similar to pushfront in c++
+        deq.offerFirst(12);                   // offerFirst is similar to push_front in c++
 
-        deq.offerLast(45);                   // offerLast is same as offer
+        deq.offerLast(45);                   // offerLast is same as offer and is similar to push_back in c++
 
         deq.offer(26);
 
@@ -31,6 +31,7 @@ class arraydeque {
 
         System.out.println("poll last(): "+deq.pollLast());        // removes last ele
         System.out.println("printing deq: "+deq);
+
 
 
 
