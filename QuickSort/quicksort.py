@@ -47,4 +47,12 @@ class Main:
     if __name__=="__main__":
         main()
         
-        
+ 
+
+"""
+OUTPUT :
+
+Enter the list to sort: 69 78 45 23 89 1 56 99 34 7
+printing Arr after quick sort: 1 7 23 34 45 56 69 78 89 99 
+
+"""
