@@ -131,3 +131,89 @@ class maxheap
     }
 }
 
+
+
+//OUTPUT: 
+
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 1
+// Enter the element to offer: 1
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 1
+// Enter the element to offer: 2
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 1
+// Enter the element to offer: 3
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 1
+// Enter the element to offer: 4
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 1
+// Enter the element to offer: 5
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 1
+// Enter the element to offer: 6
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 1
+// Enter the element to offer: 7
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 1
+// Enter the element to offer: 8
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 1
+// Enter the element to offer: 9
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 1
+// Enter the element to offer: 10
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 4
+// printing maxheap: 10 9 6 7 8 2 5 1 4 3 
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 3
+// The peek of maxheap is: 10
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// the polled ele is: 10
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// the polled ele is: 9
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// the polled ele is: 8
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// the polled ele is: 7
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// the polled ele is: 6
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 3
+// The peek of maxheap is: 5
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 4
+// printing maxheap: 5 4 2 1 3 
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// the polled ele is: 5
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// the polled ele is: 4
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// the polled ele is: 3
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// the polled ele is: 2
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// the polled ele is: 1
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 2
+// UnderFlow maxheap is empty
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 3
+// maxheap is empty
+// 1.Offer   2.Poll   3.Peek   4.Print
+// Enter your choice: 4
+// maxheap is empty
+// 1.Offer   2.Poll   3.Peek   4.Print
