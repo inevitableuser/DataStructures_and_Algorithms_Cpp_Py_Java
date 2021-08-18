@@ -7,25 +7,44 @@ public:
 
   maxheap() {}
 
-  void heapify(int i) {
+  void rebuild()
+  {
+    cout<<"rebuilding maxheap after sort..."<<endl;
+    int len=ceil((float) vect.size()/2)-1;
+    for(int i=len;i>=0;i--)
+    {
+        heapify(i, vect.size());
+    }
+  }
+  void sort()
+  {
+    for(int i=vect.size()-1;i>=0;i--)
+    {
+      swap(0,i);
+      heapify(0,i);
+    }
+    cout<<"Sorting heap completed..."<<endl;
+    print();
+    rebuild();
+     
+  }
+
+  void heapify(int i,int n) {
     int lc = i * 2 + 1;
     int rc = i * 2 + 2;
     int larg = i;
 
-    if (lc >= vect.size() || rc >= vect.size()) {
-      return;
-    }
 
-    if (vect.at(lc) > vect.at(i)) {
+    if (lc<n && vect.at(lc) > vect.at(i)) {
       larg = lc;
     }
-    if (vect.at(rc) > vect.at(larg)) {
+    if (rc<n && vect.at(rc) > vect.at(larg)) {
       larg = rc;
     }
 
     if (larg != i) {
       swap(i, larg);
-      heapify(larg);
+      heapify(larg,n);
     }
   }
 
@@ -55,7 +74,7 @@ public:
     int ele = vect.at(0);
     swap(0, vect.size() - 1);
     vect.pop_back();
-    heapify(0);
+    heapify(0,vect.size());
     return ele;
   }
   void peek() {
@@ -84,7 +103,7 @@ int main() {
 
   while (true) {
 
-    cout << "1.offer   2.poll   3.peek   4.print" << endl;
+    cout << "1.offer   2.poll   3.peek   4.print   5.sort   6.exit" << endl;
     cout << "enter your choice: ";
     cin >> choice;
     if (choice == 1) {
@@ -102,7 +121,12 @@ int main() {
       max.peek();
     } else if (choice == 4) {
       max.print();
-    } else {
+    } 
+    else if(choice==5)
+    {
+       max.sort();
+    }
+    else {
       break;
     }
   }
