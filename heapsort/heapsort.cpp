@@ -40,3 +40,11 @@ int main()
 
     return 0;
 }
+
+
+
+// OUTPUT: 
+
+// Enter the size of array: 5
+// Enter the min_heap to sort: 5 4 3 2 1
+// printing sorted heap: 1 2 3 4 5 
