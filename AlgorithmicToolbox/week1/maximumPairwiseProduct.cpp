@@ -21,3 +21,4 @@ int main()
     cout<<(long)max*smax<<endl;
     return 0;
 }
+
