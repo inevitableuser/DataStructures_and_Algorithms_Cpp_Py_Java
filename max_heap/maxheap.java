@@ -8,28 +8,46 @@ class _Maxheap
    {
    }
 
+   public void rebuild()
+   {
+       int len=(int) Math.ceil((float) Arr.size()/2)-1;
+
+       for(int i=len;i>=0;i--)
+       {
+          down_heapify(i, Arr.size());
+       }
+   }
+
+   public void sort()
+   {
+      int len=Arr.size();
+      for(int i=len-1;i>=0;i--)
+      {
+         swap(0,i);
+         down_heapify(0,i);
+      }
+      print();
+      System.out.println("Rebuilding sorted maxheap to maxheap...");
+      rebuild();
+   }
+
    private void swap(int child,int parent)
    {
       int temp=Arr.get(child);
       Arr.set(child,Arr.get(parent));
       Arr.set(parent,temp);
    }
-   private void down_heapify(int parent)
+   private void down_heapify(int parent,int size)
    {
       int lchild=parent*2+1;
       int rchild=parent*2+2;
       int larg=parent;
 
-      if(lchild>=Arr.size() || rchild >=Arr.size())
-      {
-          return;
-      }
-
-      if(Arr.get(lchild)>Arr.get(larg))
+      if(lchild<size && Arr.get(lchild)>Arr.get(larg))
       {
          larg=lchild;
       }
-      if(Arr.get(rchild)>Arr.get(larg))
+      if(rchild<size && Arr.get(rchild)>Arr.get(larg))
       {
         larg=rchild;
       }
@@ -37,7 +55,7 @@ class _Maxheap
       if(larg!=parent)
       {
         swap(larg,parent);
-        down_heapify(larg);
+        down_heapify(larg,size);
       }
       
    }
@@ -71,7 +89,7 @@ class _Maxheap
        swap(0,len-1);
        int ele=Arr.get(len-1);
        Arr.remove(len-1);
-       down_heapify(0);
+       down_heapify(0,Arr.size());
        System.out.println("the polled ele is: "+ele);
    }
 
@@ -98,7 +116,7 @@ class maxheap
          _Maxheap mheap=new _Maxheap();
          while(true)
          {
-             System.out.println("1.Offer   2.Poll   3.Peek   4.Print");
+             System.out.println("1.Offer   2.Poll   3.Peek   4.Print   5.sort   6.exit");
              System.out.print("Enter your choice: ");
              int choice;
              choice=sc.nextInt();
@@ -120,100 +138,25 @@ class maxheap
                      mheap.peek();
                 else System.out.println("maxheap is empty");
              }
-             else
+             else if(choice==4)
              {   
                  if(mheap.Arr.size()!=0)
                      mheap.print();
                  else System.out.println("maxheap is empty");
+             }
+             else if(choice==5)
+             {
+                if(mheap.Arr.size()!=0)
+                        mheap.sort();
+                else System.out.println("maxheap is empty");
+             }
+             else 
+             {
+                 sc.close();
+                 break;
              }
          }
         
     }
 }
 
-
-
-//OUTPUT: 
-
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 1
-// Enter the element to offer: 1
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 1
-// Enter the element to offer: 2
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 1
-// Enter the element to offer: 3
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 1
-// Enter the element to offer: 4
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 1
-// Enter the element to offer: 5
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 1
-// Enter the element to offer: 6
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 1
-// Enter the element to offer: 7
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 1
-// Enter the element to offer: 8
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 1
-// Enter the element to offer: 9
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 1
-// Enter the element to offer: 10
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 4
-// printing maxheap: 10 9 6 7 8 2 5 1 4 3 
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 3
-// The peek of maxheap is: 10
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// the polled ele is: 10
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// the polled ele is: 9
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// the polled ele is: 8
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// the polled ele is: 7
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// the polled ele is: 6
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 3
-// The peek of maxheap is: 5
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 4
-// printing maxheap: 5 4 2 1 3 
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// the polled ele is: 5
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// the polled ele is: 4
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// the polled ele is: 3
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// the polled ele is: 2
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// the polled ele is: 1
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 2
-// UnderFlow maxheap is empty
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 3
-// maxheap is empty
-// 1.Offer   2.Poll   3.Peek   4.Print
-// Enter your choice: 4
-// maxheap is empty
-// 1.Offer   2.Poll   3.Peek   4.Print
