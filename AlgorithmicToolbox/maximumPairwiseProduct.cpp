@@ -6,7 +6,6 @@ int main()
 {
     int n,ele,max=0,smax;
     cin>>n;
-    vector<int> vect;
     for(int i=0;i<n;i++)
     {
         cin>>ele;
@@ -15,8 +14,11 @@ int main()
             smax=max;
             max=ele;
         }
-        vect.push_back(ele);
+        if(ele>smax && ele!=max)
+        {
+            smax=ele;
+        }
     }
-    cout<<max*smax<<endl;
+    cout<<(long)max*smax<<endl;
     return 0;
 }
