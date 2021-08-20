@@ -10,3 +10,8 @@ int main()
     return 0;
 }
 
+
+// Input:
+// 9 7
+// Output:
+// 16
