@@ -22,3 +22,18 @@ int main()
     return 0;
 }
 
+
+
+// Sample 1.
+// Input:
+// 3
+// 1 2 3
+// Output:
+// 6
+
+// Sample 2.
+// Input:
+// 10
+// 7 5 14 2 8 8 10 1 2 3
+// Output:
+// 140
