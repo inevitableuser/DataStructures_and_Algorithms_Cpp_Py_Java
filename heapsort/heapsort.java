@@ -3,7 +3,7 @@ import java.util.*;
 class heapsort      // O(nlogn) + O(nlogn) ==> O(nlogn)
 {
     
-static void desc_sort(PriorityQueue<Integer> minheap,List<Integer> Arr)
+static List<Integer> desc_sort(PriorityQueue<Integer> minheap,List<Integer> Arr)
 {
     int l=minheap.size();
 
@@ -16,6 +16,7 @@ static void desc_sort(PriorityQueue<Integer> minheap,List<Integer> Arr)
     // PriorityQueue<Integer> maxheap=new PriorityQueue<>(Comparator.reverseOrder());
     // maxheap.addAll(Arr);                            // convert entire array to maxheap.
     
+    return Arr;
 }
 
 static void print(List<Integer> Arr)
@@ -53,7 +54,7 @@ public static void main(String[] args)
       minheap.addAll(Arr);             // addAll() here also takes O(nlogn) because it is calling offer n times
                                        // java doesn't has build_heapify which takes O(n) time to build heap from array
 
-      desc_sort(minheap,Arr);
+      Arr = desc_sort(minheap,Arr);
 
   } 
 
