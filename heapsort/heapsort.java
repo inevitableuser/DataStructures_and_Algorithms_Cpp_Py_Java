@@ -1,6 +1,6 @@
 import java.util.*;
 
-class heapsort      // O(nlogn) + O(n) ==> O(nlogn)
+class heapsort      // O(nlogn) + O(nlogn) ==> O(nlogn)
 {
     
 static void desc_sort(PriorityQueue<Integer> minheap,List<Integer> Arr)
@@ -9,7 +9,7 @@ static void desc_sort(PriorityQueue<Integer> minheap,List<Integer> Arr)
 
     for(int i=0;i<l;i++)                // for n times
     { 
-        Arr.set(i,minheap.poll());       // each poll takes O(1) so tc O(n)
+        Arr.set(i,minheap.poll());       // each poll takes O(logn) so tc O(nlogn)
     }
     print(Arr);
 
