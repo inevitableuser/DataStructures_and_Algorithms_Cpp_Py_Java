@@ -20,7 +20,7 @@ int main()
     cout << "Enter the size of array: ";
     cin >> n;
 
-    cout << "Enter the min_heap to sort: ";
+    cout << "Enter the array to sort: ";
     for (int i = 0; i < n; i++) 
     {
         cin >> ele;
@@ -30,7 +30,7 @@ int main()
 
     heap_sort(heap, minheap);
 
-    cout << "printing sorted heap: ";
+    cout << "printing array after heap sort: ";
     for (int i = 0; i < heap.size(); i++)
     {
         cout << heap.at(i) << " ";
@@ -46,5 +46,5 @@ int main()
 // OUTPUT: 
 
 // Enter the size of array: 5
-// Enter the min_heap to sort: 5 4 3 2 1
-// printing sorted heap: 1 2 3 4 5 
+// Enter the array to sort: 5 4 3 2 1
+// printing array after heap sort: 1 2 3 4 5 
