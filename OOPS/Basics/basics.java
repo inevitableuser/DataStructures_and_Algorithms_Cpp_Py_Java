@@ -90,3 +90,21 @@ class basics
      sc.close();
    }
 }
+
+
+
+// OUTPUT:
+
+// creating an object 1
+// Enter person name: person1
+// Enter person age: 23
+// Enter person name: person2
+// Enter person age: 31
+// creating an object 2
+// person1 23
+// person2 31
+// person1 is eating
+// person2 is walking
+// person2 walked 2 steps.
+// creating an object 3
+// Developer linus torvalds is walking.
