@@ -18,22 +18,22 @@ int main()
        cout<<i.first<<":"<<i.second<<endl;
    }
   
-   cout<<"finding 13 -> "<<mp.count(13)<<endl;
+   cout<<"finding 13 -> "<<mp.count(13)<<endl;     // 13 key is present or not if yes return 1 else 0.
 
    cout<<"finding 12 -> "<<mp.count(12)<<endl;
 
     
-   mp.erase(12);
+   mp.erase(12);                                          //removes the key-value pair based on the key.
 
 
   cout<<"After erase: "<<endl;
 
    for(auto i:mp)
    {
-       cout<<i.first<<":"<<i.second<<endl;
+       cout<<i.first<<":"<<i.second<<endl;                              // i.first gets key and i.second gets value
    }
 
-   auto it=mp.find(3);
+   auto it=mp.find(3);                                                // find(3) finds the key 3 and returns reference(iterator) to that key.
   
   cout<<"Printing from iterator to end: "<<endl;
   for(auto i=it;i!=mp.end();i++)
