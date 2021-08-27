@@ -9,12 +9,12 @@ class hashset
              set is unordered, implemented using hashtable
              linked has set is ordered (insertion order not sorted order),implemented using hashtable
              
-             hashset depends on arraylist
-             linkedhashset depends on double linked list (to maintaing insertion order)
+             hashset is implemented by hashmap datastructure.
+             linkedhashset is implemented by linked hashmap datastructure (to maintaing insertion order)
 
              Both provide o(1) complicity for inserting, removing, retrieving the object.
              but hash set is little faster than linkedhash set
-             
+
         */
         set.add(5);
         set.add(5);
