@@ -10,7 +10,7 @@ class hashset
              linked has set is ordered (insertion order not sorted order),implemented using hashtable
              
              hashset is implemented by hashmap datastructure.
-             linkedhashset is implemented by linked hashmap datastructure (to maintaing insertion order)
+             linkedhashset is implemented by linked hashmap datastructure (to maintaining insertion order)
 
              Both provide o(1) complicity for inserting, removing, retrieving the object.
              but hash set is little faster than linkedhash set
@@ -38,5 +38,19 @@ class hashset
 
         set.clear();              // clears all ele in set
 
+        System.out.println(set);
+
     }
 }
+
+
+
+// OUTPUT:
+
+// [3, 4, 100, 5]
+// [3, 4, 5]
+// true
+// false
+// 3
+// [3, 4, 5]
+// []
