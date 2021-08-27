@@ -1,4 +1,5 @@
-# runs with 88% better tc and 20% better sc
+# Runtime: 48 ms, faster than 99.13% of Python3 online submissions for Two Sum.
+# Memory Usage: 15.4 MB, less than 20.75% of Python3 online submissions for Two Sum.
 
 class Solution:
     def twoSum(self, nums, target):
@@ -17,7 +18,7 @@ print(sol.twoSum([3,2,4],6))
 
 
 
-# runs with 30% better tc and   80 % better sc
+# runs with 30% better tc and  80 % better sc
 
 
 # class Solution:
