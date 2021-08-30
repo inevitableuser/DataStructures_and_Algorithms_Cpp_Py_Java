@@ -7,15 +7,26 @@ class hashset
                                                    // set in python and java are unordered, where cpp set is ordered
         /*
              set is unordered, implemented using hashtable
-             linked has set is ordered (insertion order not sorted order),implemented using hashtable
-             
+             linked hash set is ordered (insertion order not sorted order),implemented using hashtable
+             treeset is ordered(sorted order), implemented using binary search tree
+
+
              hashset is implemented by hashmap datastructure.
              linkedhashset is implemented by linked hashmap datastructure (to maintaining insertion order)
+             treeset is implemented by treemap datastructure
+             
 
-             Both provide o(1) complicity for inserting, removing, retrieving the object.
+             Both hashset,linkedhashset provide o(1) complicity for inserting, removing, retrieving the object.
              but hash set is little faster than linkedhash set
+             where as treeset provide O(logn) complexity for every operation bcz of binary serch tree impl.
 
         */
+
+        // Set<Integer> set=new LinkedHashSet<>();               (remembers insertion order)
+
+        // Set<Integer> set =new TreeSet<>();                    (sorted set - non decreasing order)
+
+
         set.add(5);
         set.add(5);
         set.add(4);
@@ -45,9 +56,32 @@ class hashset
 
 
 
-// OUTPUT:
+// OUTPUT: if hashset used
 
 // [3, 4, 100, 5]
+// [3, 4, 5]
+// true
+// false
+// 3
+// [3, 4, 5]
+// []
+
+
+
+// OUTPUT:  if linkedhashset used
+
+// [5, 4, 3, 100]
+// [5, 4, 3]
+// true
+// false
+// 3
+// [5, 4, 3]
+// []
+
+
+// OUTPUT:    if treeset used
+
+// [3, 4, 5, 100]
 // [3, 4, 5]
 // true
 // false
