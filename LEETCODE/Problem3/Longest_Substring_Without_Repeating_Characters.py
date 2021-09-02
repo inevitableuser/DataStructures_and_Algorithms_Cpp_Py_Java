@@ -2,8 +2,8 @@
 #Memory Usage: 14.3 MB, less than 80.36% of Python3 online submissions for Longest Substring Without Repeating Characters.
 
 class Solution:
-    def lengthOfLongestSubstring(self, s):             # O(n) TC
-        mem={}
+    def lengthOfLongestSubstring(self, s):             # O(n) TC  SLIDING WINDOW
+        mem={} 
         start=0
         maxx=0
         for i in range(len(s)):
