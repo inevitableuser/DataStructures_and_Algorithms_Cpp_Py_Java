@@ -57,17 +57,6 @@ int main()
      for(auto i:v)
      cout<<i<<" ";
      cout<<endl;
-
-     
-    
-
-
-
-
-
-
-
-
     
     return 0;
 }
