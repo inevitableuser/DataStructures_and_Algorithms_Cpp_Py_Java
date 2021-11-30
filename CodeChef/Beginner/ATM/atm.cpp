@@ -4,7 +4,7 @@ int main() {
 
   int withdraw_amt;
   double acc_bal;
-  double atm_charge = 0.5;
+  double atm_charge = 0.50;
 
   cin >> withdraw_amt;
   cin >> acc_bal;
@@ -15,7 +15,7 @@ int main() {
       acc_bal = acc_bal - final_debit;
     }
   }
-  cout << fixed;
-  cout << setprecision(2);
+  // cout << fixed;
+  // cout << setprecision(2);
   cout << acc_bal << endl;
 }
